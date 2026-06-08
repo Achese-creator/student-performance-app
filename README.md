@@ -20,7 +20,9 @@ The dataset used for this project was obtained from Kaggle:
 [Student Performance Factors Dataset](https://www.kaggle.com/datasets/ayeshaseherr/student-performance)
 
 The target variable is Exam_Score
-Features Used
+
+## Features Used
+
 The model uses the following input features:
 Hours Studied
 Attendance
@@ -41,7 +43,8 @@ Learning Disabilities
 Parental Education Level
 Distance from Home
 Gender
-Preprocessing
+
+## Preprocessing
 The preprocessing stage included:
 
 Standard scaling for selected numerical count-based features
@@ -50,7 +53,7 @@ Ordinal encoding for ordered categorical variables
 One-hot encoding for unordered categorical variables
 A preprocessing pipeline was used to ensure that the same transformations were applied consistently during training and prediction.
 
-Models And Performance
+## Models and Perfomance
 Linear Regression
 Mean Absolute Error: 0.4103
 Mean Squared Error: 2.3038
@@ -63,17 +66,18 @@ Root Mean Squared Error: 1.6396
 R-squared Score: 0.7967
 Linear Regression performed better because it had lower error values and a higher R-squared score. This suggests that the relationship between the dataset features and exam score was mostly linear.
 
-Nigerian Grading System
+## Nigerian Grading System
 The app classifies predicted scores using the classic Nigerian grading system:
 
-Score Range	Grade
+##Score Range	Grade
 70 and above	A
 60 - 69	B
 50 - 59	C
 45 - 49	D
 40 - 44	E
 39 and below	F
-Streamlit App
+
+##Streamlit App
 The app allows users to enter student information and receive:
 
 Predicted exam score
@@ -88,7 +92,8 @@ Joblib
 Streamlit
 GitHub
 Streamlit Community Cloud
-How To Run Locally
+
+## How to run locally
 Clone the repository:
 
 git clone https://github.com/Achese-creator/student-performance-app.git
@@ -107,8 +112,8 @@ pip install -r requirements.txt
 Run the Streamlit app:
 
 streamlit run app.py
-Deployment
+##Deployment
 The app was deployed using Streamlit Community Cloud. Python 3.12 was used to ensure compatibility with the scikit-learn version used to save the trained model.
 
-Project Reflection
+##Project Reflection
 This project covered the full machine learning workflow, including data preprocessing, model training, model evaluation, deployment, and user interface development. It showed the importance of selecting appropriate preprocessing methods, comparing models using suitable metrics, and ensuring compatibility between the training and deployment environments.
